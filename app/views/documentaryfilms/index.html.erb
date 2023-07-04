@@ -4,7 +4,7 @@
 <%= link_to 'Ingresar un nuevo Documentary Film', documentaryfilms_new_path %>
 
 <div>
-    <table class="table table-striped table-hover">
+    <table class="table table-dark table-striped-columns">
         <thead>
             <tr>
                 <th scope="col">N°</th>
@@ -13,7 +13,7 @@
                 <th scope="col">Director</th>
             </tr>
         </thead>
-        <tbody>
+        <tbody class="table-group-divider">
             <% @documentaryfilms.each do |documentaryfilm| %>
             <tr>
                 <th scope="row"><%= documentaryfilm.id %></th>
